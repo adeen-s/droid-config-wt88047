@@ -1,0 +1,12 @@
+<pattern xmlns:rpm="http://linux.duke.edu/metadata/rpm" xmlns="http://novell.com/package/metadata/suse/pattern">
+  <name>jolla-ui-configuration-wt88047</name>
+  <version ver="1" epoch="0" rel="1"/>
+  <summary>Jolla UI Configuration wt88047</summary>
+  <description>Pattern with UI related packages for wt88047 configurations</description>
+  <uservisible/>
+  <category lang="en">Base Group</category>
+  <rpm:requires>
+    <rpm:entry name="jolla-ambient-z2.0"/>
+    <rpm:entry name="ambient-icons-closed-z2.0"/>
+  </rpm:requires>
+</pattern>

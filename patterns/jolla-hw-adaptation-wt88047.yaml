@@ -16,6 +16,7 @@ Requires:
 - droid-config-wt88047-policy-settings
 - droid-config-wt88047-preinit-plugin
 - droid-hal-version-wt88047
+- droid-hal-wt88047-detritus
 
 - pulseaudio-modules-droid
 # for audio recording to work:
