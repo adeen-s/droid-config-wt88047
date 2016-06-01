@@ -6,6 +6,6 @@
 %define vendor_pretty Xiaomi
 %define device_pretty Redmi2
 %define dcd_path ./
-%define pixel_ratio 2.0
+%define pixel_ratio 1.33
 %define have_modem 1
 %include droid-configs-device/droid-configs.inc

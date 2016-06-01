@@ -1,0 +1,14 @@
+<pattern xmlns:rpm="http://linux.duke.edu/metadata/rpm" xmlns="http://novell.com/package/metadata/suse/pattern">
+  <name>jolla-configuration-wt88047</name>
+  <version ver="1" epoch="0" rel="1"/>
+  <summary>Jolla Configuration wt88047</summary>
+  <description>Pattern with packages for wt88047 configurations</description>
+  <uservisible/>
+  <category lang="en">Base Group</category>
+  <rpm:requires>
+    <rpm:entry name="pattern:jolla-hw-adaptation-wt88047"/>
+    <rpm:entry name="pattern:jolla-sailfish-applications"/>
+    <rpm:entry name="pattern:jolla-ui-wayland"/>
+    <rpm:entry name="pattern:sailfish-porter-tools"/>
+  </rpm:requires>
+</pattern>
