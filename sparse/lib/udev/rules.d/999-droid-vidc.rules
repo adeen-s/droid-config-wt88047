@@ -1,0 +1,6 @@
+KERNEL=="video32", MODE="0660", GROUP="audio", OWNER="system"
+KERNEL=="video33", MODE="0660", GROUP="audio", OWNER="system"
+
+KERNEL=="video32", SYMLINK+="video/venus_dec"
+KERNEL=="video33", SYMLINK+="video/venus_enc"
+
