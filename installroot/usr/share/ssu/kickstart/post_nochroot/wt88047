@@ -1,1 +1,0 @@
-cp $INSTALL_ROOT/etc/sailfish-release $IMG_OUT_DIR
