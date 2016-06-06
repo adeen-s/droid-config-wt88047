@@ -19,6 +19,8 @@ Requires:
 - droid-hal-wt88047-detritus
 
 - pulseaudio-modules-droid
+
+# for audio in calls
 - pulseaudio-modules-droid-glue
 # for audio recording to work:
 - qt5-qtmultimedia-plugin-mediaservice-gstmediacapture
@@ -78,5 +80,10 @@ Requires:
 # For devices where test_gps eventually gets a fix:
 - geoclue-provider-hybris
 
-Summary: Jolla HW Adaptation wt88047
+# For mounting SD card automatically
+- sd-utils
 
+# For FM radio
+- qt5-qtmultimedia-plugin-mediaservice-irisradio
+
+Summary: Jolla HW Adaptation wt88047
