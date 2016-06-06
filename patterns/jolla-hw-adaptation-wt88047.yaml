@@ -81,7 +81,7 @@ Requires:
 - geoclue-provider-hybris
 
 # For mounting SD card automatically
-# sd-utils (Already added a working script to sparse)
+- sd-utils
 
 # For FM radio
 - qt5-qtmultimedia-plugin-mediaservice-irisradio
