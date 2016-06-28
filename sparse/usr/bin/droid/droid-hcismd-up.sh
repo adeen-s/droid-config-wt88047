@@ -12,8 +12,11 @@ setprop qcom.bt.le_dev_pwr_class 2
 
 i=1
 while [ ! $i -gt $MAXTRIES ]  ; do
+    rfkill unblock all
     echo 1 > /sys/module/hci_smd/parameters/hcismd_set
     if [ -e /sys/class/bluetooth/hci0 ] ; then
+        rfkill unblock all
+        hciconfig hci0 up
         # found hci0, exit successfully
         echo 0 > /sys/module/hci_smd/parameters/hcismd_set
         bt_mac=$(/system/bin/hci_qcomm_init -e -p 2 -P 2 -d /dev/ttyHSL0 2>1 | grep -oP '([0-9a-f]{2}:){5}([0-9a-f]{2})')
@@ -31,3 +34,6 @@ while [ ! $i -gt $MAXTRIES ]  ; do
         exit 1
     fi
 done
+rfkill unblock all
+hciconfig hci0 up
+
