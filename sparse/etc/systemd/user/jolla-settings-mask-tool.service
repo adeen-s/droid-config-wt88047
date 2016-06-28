@@ -1,0 +1,11 @@
+[Unit]
+Description=jolla-settings-mask-tool
+Requires=dbus.socket
+After=dbus.socket user-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/jolla-settings-mask-tool
+
+[Install]
+WantedBy=post-user-session.target
